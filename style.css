@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
+body{
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  background-color:  hsl(222, 26%, 31%)
+}
+
+*{
+  font-family: 'Outfit', sans-serif;
+}
+
+main{
+  display: grid;
+  grid-template-rows: 100px 100px auto;
+  
+}
+@media (min-width:800px) {
+  main{
+    width: 500px;
+    grid-template-rows: 80px 80px 430px;
+    gap: 10px;
+  }
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: hsl(0, 0%, 100%);
+  width: 90%;
+}
+
+.calc{
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-size: 30px;
+}
+
+.theme{
+  display: grid;
+  grid-template-columns:50px 50px repeat(3,20px);
+  margin:  20px 10px;
+}
+.p-theme{
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  margin-top: 30px;
+  
+}
+.theme-button{
+  position: relative;
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 20px;
+  height: 30px;
+  width: 80px;
+}
+.div-1{
+  grid-column: 3 / 4;
+  margin-left: 20px;
+}
+.div-2{
+  grid-column: 4 / 5;
+  margin-left: 20px;
+}
+.div-3{
+  grid-column: 5 / 6;
+  margin-left: 20px;
+}
+
+.circle-red{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 50px;
+  top:2px;
+  right: 48px;
+}
+.place-display{
+  background-color: hsl(224, 36%, 15%);
+  height: 150px;
+  margin: 0 30px;
+  border-radius: 20px;
+  text-align: end;
+  color: hsl(0, 0%, 100%);
+  font-size: 32px;
+  font-weight: 700;
+  font-family:  'Outfit', sans-serif;
+  padding-right: 20px;
+}
+
+.place-display h2 {
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-section{
+  display: grid;
+  grid-template-columns: repeat(4,50px);
+  margin: 30px;
+  gap: 15px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.main-section > *:hover {
+  cursor: pointer;
+}
+
+@media (min-width:800px) {
+  .main-section{
+    grid-template-columns: repeat(4,1fr);
+
+  }
+}
+
+.main-section button {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 26px;
+  box-shadow: 0 3px 0px 0px hsl(28, 16%, 65%);
+}
+
+@media (min-width:800px) {
+  .main-section button{
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+
+#rese{
+  grid-column: 1 / 3;
+  background-color:  hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: 0 3px 0px 0px hsl(224, 28%, 35%);
+  
+}
+#eqval{
+  grid-column: 3 / 5;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px 0px 0px hsl(6, 70%, 34%);
+}
+section .del{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 3px 0px 0px hsl(224, 28%, 35%);
+  color: white;
+  font-size: 18px;
+}
+
